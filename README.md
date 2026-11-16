@@ -1,112 +1,170 @@
-DEVGANGA AMRIT — ANDROID APP
+DEVGANGA AMRIT
 
-Bringing Spiritual Heritage into the Digital World
+Native Android Application
+
+Inspired by Devprayag. Rooted in Spiritual Heritage.
 
 DevGanga Amrit is a premium spiritual heritage brand inspired by the sacred confluence of the Alaknanda and Bhagirathi rivers at Devprayag, Uttarakhand, India.
 
-This repository contains the Android application project for DevGanga Amrit. The project aims to bring the brand's identity, spiritual heritage, and digital experience to Android users through a thoughtfully designed mobile application.
-
----
+This repository contains the DevGanga Amrit Android application project, along with its associated web interface source code. The application presents the brand's identity, spiritual heritage, product information, and vision through a dedicated mobile experience.
 
 🌿 About the Project
 
 DevGanga Amrit combines traditional spiritual values with modern technology.
 
-The Android application is part of the brand's digital development journey, with an emphasis on usability, visual presentation, accessibility, and a consistent brand identity.
+The Android application is designed around a premium visual identity, intuitive navigation, and a mobile-first experience. It introduces users to the brand, the sacred confluence at Devprayag, and the intended religious uses of Ganga Jal.
 
-🎯 Project Objectives
+The product is intended for religious and ritual use only, not for drinking.
 
-- Develop a dedicated Android application for DevGanga Amrit.
-- Establish a consistent digital identity for the brand.
-- Create a clean and user-friendly mobile experience.
-- Explore modern mobile application development.
-- Improve usability, performance, and compatibility.
-- Introduce additional features as the project evolves.
+✨ Application Features
 
-✨ Key Features
+- Splash Screen — Branded introduction to the application.
+- Home Screen — Brand presentation and featured content.
+- Our Story — The inspiration and heritage behind DevGanga Amrit.
+- Devprayag — Information about the confluence of the Alaknanda and Bhagirathi rivers.
+- Product Showcase — Presentation of the 250 ml Ganga Jal bottle.
+- Rituals — Information about traditional religious uses.
+- Coming Soon — Pre-launch screen and notification interface.
+- FAQ — Frequently asked questions.
+- Contact — Email, phone dialer, and WhatsApp integration.
+- About — Additional information about the brand.
 
-The application's features will depend on the current implementation and future development.
+🛠️ Technology Stack
 
-Potential areas of development include:
+Native Android Application
 
-- Brand introduction and information.
-- Product presentation.
-- Spiritual heritage and Devprayag information.
-- Responsive and intuitive navigation.
-- Improved mobile usability.
-- Additional digital features as the project develops.
+- Kotlin — Android application development.
+- Jetpack Compose — Declarative user interface.
+- Material 3 — Android UI components and styling.
+- Android SDK — Android platform development.
+- Gradle Kotlin DSL — Build configuration.
 
-🛠️ Development Environment
+Web Interface
 
-- IDE: Android Studio
-- Platform: Android
-- Version Control: Git and GitHub
+The repository also contains a web interface developed with:
 
-The programming language, Android SDK version, frameworks, and other dependencies will be documented according to the project's actual configuration.
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React
+- Motion
 
-🚀 Getting Started
+📱 Android Application Specifications
+
+Property| Value
+Application Name| DevGanga Amrit
+Package Name| "com.devganga.amrit"
+Minimum SDK| 26
+Target SDK| 34
+Version Name| 1.0.0
+Version Code| 1
+UI Framework| Jetpack Compose
+Design System| Material 3
+
+📂 Project Structure
+
+devganga-amrit-android-app/
+├── android/
+│   ├── app/
+│   │   ├── src/
+│   │   │   └── main/
+│   │   │       ├── java/com/devganga/amrit/
+│   │   │       │   ├── MainActivity.kt
+│   │   │       │   └── ui/theme/
+│   │   │       ├── res/
+│   │   │       └── AndroidManifest.xml
+│   │   └── build.gradle.kts
+│   ├── gradle/
+│   ├── build.gradle.kts
+│   ├── settings.gradle.kts
+│   ├── gradle.properties
+│   └── README_APK_BUILD.md
+├── public/
+│   └── assets/
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+├── package.json
+├── index.html
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+
+🚀 Getting Started — Android App
 
 Prerequisites
 
 - Android Studio
-- Android SDK compatible with the project
-- Git, if cloning the repository
+- Android SDK
+- A compatible Android device or emulator
+- Internet connection for downloading build dependencies
 
-Installation
+Open the Android Project
 
-Clone the repository:
+1. Clone or download this repository.
+2. Extract the ZIP if you downloaded it.
+3. Open Android Studio.
+4. Select Open.
+5. Choose the repository's "android/" directory.
+6. Allow Gradle to sync.
+7. Start an emulator or connect an Android device.
+8. Click Run to build and launch the application.
 
-git clone https://github.com/rolysajwan/devganga-amrit-android-app.git
+Build a Debug APK
 
-Open the project directory:
+In Android Studio:
 
-cd devganga-amrit-android-app
+1. Open the native Android project.
+2. Select Build from the menu.
+3. Choose Build Bundle(s) / APK(s).
+4. Select Build APK(s).
 
-Run the Application
+The generated debug APK should be available at:
 
-1. Open Android Studio.
-2. Select Open and choose the project directory.
-3. Allow Gradle to sync and download the required dependencies.
-4. Connect an Android device or start an emulator.
-5. Select Run to build and launch the application.
+android/app/build/outputs/apk/debug/app-debug.apk
 
-The exact setup requirements depend on the project's configuration.
+The build must complete successfully for the APK to be generated.
 
-📂 Project Structure
+🌐 Web Interface
 
-The project structure follows the configuration generated and maintained by Android Studio.
+The repository also includes a React-based web interface.
 
-Common Android project components may include:
+To run it locally, install Node.js and npm, then execute the following commands from the repository root:
 
-- "app/" — Application module and source code.
-- "gradle/" — Gradle wrapper and related configuration.
-- "build.gradle" or "build.gradle.kts" — Build configuration.
-- "settings.gradle" or "settings.gradle.kts" — Project configuration.
-- "AndroidManifest.xml" — Application components and permissions.
+npm install
+npm run dev
 
-The actual structure may vary depending on the project's implementation.
+To generate a production build:
+
+npm run build
 
 🔒 Security
 
-- Do not commit passwords, API keys, or private credentials.
+- Do not commit API keys, passwords, or private credentials.
 - Keep signing keys and sensitive configuration files secure.
-- Review permissions and dependencies before release.
+- Review application permissions before publishing.
+- Store environment-specific secrets outside version control.
 
 🔮 Future Development
 
-Potential improvements may include:
+Potential improvements include:
 
-- UI/UX enhancements.
-- Additional brand and product information.
-- Better performance and accessibility.
-- Compatibility improvements across Android devices.
-- New features based on project requirements.
+- Further UI/UX refinement.
+- Accessibility and performance improvements.
+- Additional product and brand information.
+- Expanded mobile functionality.
+- Testing across a wider range of Android devices.
+- Preparation for a future production release.
 
 📌 Project Status
 
 Status: Under Development
 
-This repository is intended for the development and improvement of the DevGanga Amrit Android application. Features and implementation details may change as development progresses.
+This repository contains the source code for the DevGanga Amrit Android application and its associated web interface. Features and implementation details may evolve as development continues.
 
 👨‍💻 Developer
 
@@ -120,5 +178,5 @@ No open-source license has been specified. All rights are reserved by the projec
 
 ---
 
-DevGanga Amrit
-Inspired by Devprayag. Rooted in spiritual heritage. Built for the digital age.
+DEVGANGA AMRIT
+Inspired by Devprayag. Rooted in Spiritual Heritage. Built for the Digital Age.
