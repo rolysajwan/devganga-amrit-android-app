@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DEVGANGA AMRIT</string>
+    <string name="tagline">Sacred Ganga Jal from Devprayag Sangam</string>
+    <string name="product_notice_primary">FOR RELIGIOUS &amp; RITUAL USE ONLY</string>
+    <string name="product_notice_secondary">NOT FOR DRINKING</string>
+    <string name="bottle_volume">250 ml</string>
+    <string name="sample_price">₹299</string>
+    <string name="sample_mrp">₹349</string>
+    <string name="status_coming_soon">COMING SOON</string>
+    <string name="email">devgangaamrit@gmail.com</string>
+    <string name="phone">+91 96433 45474</string>
+    <string name="location">Devprayag, Tehri Garhwal, Uttarakhand, India</string>
+</resources>

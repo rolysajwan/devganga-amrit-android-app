@@ -1,0 +1,10 @@
+<resources>
+    <color name="deep_navy">#061022</color>
+    <color name="navy_surface">#09152B</color>
+    <color name="antique_gold">#C5A059</color>
+    <color name="bright_gold">#D4AF37</color>
+    <color name="warm_ivory">#FBF9F4</color>
+    <color name="himalayan_blue">#71AEC8</color>
+    <color name="charcoal">#1C2632</color>
+    <color name="warning_red">#E05353</color>
+</resources>

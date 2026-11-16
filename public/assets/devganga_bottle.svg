@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Shadow -->
+    <radialGradient id="pedestalShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.6" />
+      <stop offset="60%" stop-color="#061022" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#061022" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Gold Gradients -->
+    <linearGradient id="bottleGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8C6E2D" />
+      <stop offset="25%" stop-color="#D4AF37" />
+      <stop offset="45%" stop-color="#FBF4D9" />
+      <stop offset="70%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#73541E" />
+    </linearGradient>
+
+    <linearGradient id="capHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9C7C33" />
+      <stop offset="30%" stop-color="#EED798" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#7D5C22" />
+    </linearGradient>
+
+    <!-- Glass & Water Shading -->
+    <linearGradient id="glassBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D4A62" stop-opacity="0.65" />
+      <stop offset="15%" stop-color="#8EBCD4" stop-opacity="0.3" />
+      <stop offset="35%" stop-color="#EBF5FA" stop-opacity="0.15" />
+      <stop offset="65%" stop-color="#FFFFFF" stop-opacity="0.35" />
+      <stop offset="85%" stop-color="#8EBCD4" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#1B364D" stop-opacity="0.75" />
+    </linearGradient>
+
+    <linearGradient id="gangaWater" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A2D7EB" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#5E9DBB" stop-opacity="0.35" />
+      <stop offset="80%" stop-color="#417E9C" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#295D78" stop-opacity="0.7" />
+    </linearGradient>
+
+    <linearGradient id="labelBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B1930" />
+      <stop offset="50%" stop-color="#061124" />
+      <stop offset="100%" stop-color="#08152B" />
+    </linearGradient>
+
+    <filter id="glassReflect" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Shadow Base -->
+  <ellipse cx="250" cy="740" rx="140" ry="24" fill="url(#pedestalShadow)" />
+
+  <!-- Sacred Water Aura -->
+  <ellipse cx="250" cy="450" rx="170" ry="240" fill="#71AEC8" opacity="0.08" filter="blur(20px)" />
+
+  <!-- Bottle Outer Contour (250 ml Premium Shape) -->
+  <!-- Main Glass Body Fill -->
+  <path d="M 195 180 
+           L 305 180 
+           L 305 240 
+           C 305 280, 345 310, 350 350 
+           L 350 680 
+           C 350 710, 335 725, 295 725 
+           L 205 725 
+           C 165 725, 150 710, 150 680 
+           L 150 350 
+           C 155 310, 195 280, 195 240 
+           Z" 
+        fill="url(#glassBody)" />
+
+  <!-- Water Contents Inside (Up to neck curve) -->
+  <path d="M 198 250 
+           C 220 255, 280 255, 302 250 
+           C 303 285, 341 312, 345 350 
+           L 345 675 
+           C 345 700, 330 716, 295 716 
+           L 205 716 
+           C 170 716, 155 700, 155 675 
+           L 155 350 
+           C 159 312, 197 285, 198 250 
+           Z" 
+        fill="url(#gangaWater)" />
+
+  <!-- Water Surface Meniscus Curve -->
+  <ellipse cx="250" cy="252" rx="52" ry="7" fill="#E8F6FC" opacity="0.6" />
+  <ellipse cx="250" cy="252" rx="46" ry="4" fill="#C5E8F7" opacity="0.8" />
+
+  <!-- Glass Inner Refraction Highlights -->
+  <path d="M 160 360 L 160 670 C 160 690, 170 705, 190 710 L 180 710 C 160 705, 153 685, 153 665 L 153 360 Z" 
+        fill="#FFFFFF" opacity="0.35" />
+  <path d="M 172 380 L 172 650" stroke="#FFFFFF" stroke-width="2" opacity="0.25" stroke-linecap="round" />
+  <path d="M 338 360 L 338 670 C 338 690, 330 705, 310 710 L 320 710 C 338 705, 345 685, 345 665 L 345 360 Z" 
+        fill="#FFFFFF" opacity="0.25" />
+
+  <!-- Premium Heritage Label on Bottle -->
+  <g transform="translate(162, 345)">
+    <!-- Label Background -->
+    <rect x="0" y="0" width="176" height="270" rx="8" fill="url(#labelBg)" stroke="url(#bottleGold)" stroke-width="2.5" />
+    
+    <!-- Label Inner Inset Border -->
+    <rect x="5" y="5" width="166" height="260" rx="5" fill="none" stroke="url(#bottleGold)" stroke-width="1" stroke-dasharray="4,2" opacity="0.75" />
+    
+    <!-- Gold Corner Ornaments -->
+    <path d="M 8 18 L 18 8 M 8 8 L 8 18 L 18 8" stroke="url(#bottleGold)" stroke-width="1.2" fill="none" />
+    <path d="M 168 18 L 158 8 M 168 8 L 168 18 L 158 8" stroke="url(#bottleGold)" stroke-width="1.2" fill="none" />
+    <path d="M 8 252 L 18 262 M 8 262 L 8 252 L 18 262" stroke="url(#bottleGold)" stroke-width="1.2" fill="none" />
+    <path d="M 168 252 L 158 262 M 168 262 L 168 252 L 158 262" stroke="url(#bottleGold)" stroke-width="1.2" fill="none" />
+
+    <!-- Label Brand Crest / Symbol -->
+    <circle cx="88" cy="40" r="16" fill="#061022" stroke="url(#bottleGold)" stroke-width="1.5" />
+    <!-- Mini Mountain / Sangam Peak -->
+    <path d="M 80 46 L 88 34 L 96 46 Z" fill="url(#bottleGold)" />
+    <circle cx="88" cy="31" r="2" fill="#FFFFFF" />
+
+    <!-- Brand Name -->
+    <text x="88" y="75" font-family="'Cinzel', Georgia, serif" font-size="14" font-weight="700" letter-spacing="2.5" fill="url(#bottleGold)" text-anchor="middle">
+      DEVGANGA
+    </text>
+    <text x="88" y="93" font-family="'Cinzel', Georgia, serif" font-size="13" font-weight="700" letter-spacing="3.5" fill="url(#bottleGold)" text-anchor="middle">
+      AMRIT
+    </text>
+
+    <line x1="38" y1="102" x2="138" y2="102" stroke="url(#bottleGold)" stroke-width="0.8" opacity="0.7" />
+    <circle cx="88" cy="102" r="2" fill="url(#bottleGold)" />
+
+    <!-- Subtitle Description -->
+    <text x="88" y="118" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="1.2" fill="#E2EDF3" text-anchor="middle">
+      SACRED GANGA JAL
+    </text>
+    <text x="88" y="130" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.8" font-weight="400" letter-spacing="0.8" fill="#AFC8D6" text-anchor="middle">
+      FROM DEVPRAYAG SANGAM
+    </text>
+
+    <!-- Himalayan Confluence Icon -->
+    <g transform="translate(88, 155) scale(0.65)" stroke="url(#bottleGold)" stroke-width="1.2" fill="none">
+      <path d="M -20 -10 C -10 -5, -4 0, 0 8 C 4 0, 10 -5, 20 -10" />
+      <line x1="0" y1="8" x2="0" y2="20" stroke-width="2" />
+    </g>
+
+    <!-- Volume & Origin Badge -->
+    <rect x="52" y="176" width="72" height="18" rx="9" fill="#0C1B33" stroke="url(#bottleGold)" stroke-width="0.8" />
+    <text x="88" y="188.5" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="700" letter-spacing="1.5" fill="url(#bottleGold)" text-anchor="middle">
+      250 ml
+    </text>
+
+    <!-- Sacred Disclaimer Notice -->
+    <line x1="25" y1="208" x2="151" y2="208" stroke="url(#bottleGold)" stroke-width="0.6" opacity="0.6" />
+    <text x="88" y="222" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="700" letter-spacing="0.8" fill="#FBF4D9" text-anchor="middle">
+      FOR RELIGIOUS &amp; RITUAL USE
+    </text>
+    <text x="88" y="234" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.8" font-weight="800" letter-spacing="1" fill="#E27264" text-anchor="middle">
+      NOT FOR DRINKING
+    </text>
+    
+    <text x="88" y="252" font-family="'Plus Jakarta Sans', sans-serif" font-size="5.5" font-weight="500" letter-spacing="1" fill="#9CB2C0" text-anchor="middle">
+      ORIGIN: UTTARAKHAND, INDIA
+    </text>
+  </g>
+
+  <!-- Specular Reflection over the label (Realistic Glass Curvature) -->
+  <path d="M 180 345 L 210 345 L 200 615 L 175 615 Z" fill="#FFFFFF" opacity="0.08" />
+  <path d="M 295 345 L 315 345 L 305 615 L 285 615 Z" fill="#FFFFFF" opacity="0.05" />
+
+  <!-- Bottle Neck Ring / Collar -->
+  <rect x="194" y="228" width="112" height="14" rx="3" fill="url(#bottleGold)" stroke="#6C4E19" stroke-width="1" />
+  <!-- Sacred Golden Neck Seal Ribbon -->
+  <rect x="200" y="200" width="100" height="28" fill="#081428" stroke="url(#bottleGold)" stroke-width="1" />
+  <text x="250" y="218" font-family="'Cinzel', Georgia, serif" font-size="7.5" font-weight="700" letter-spacing="2" fill="url(#bottleGold)" text-anchor="middle">
+    DEVPRAYAG
+  </text>
+
+  <!-- Antique Gold Threaded Cap -->
+  <g transform="translate(192, 110)">
+    <!-- Cap Base -->
+    <rect x="0" y="25" width="116" height="48" rx="4" fill="url(#capHighlight)" stroke="#6E4D17" stroke-width="1.2" />
+    
+    <!-- Ribbed Grips / Knurling Lines on Cap -->
+    <line x1="12" y1="28" x2="12" y2="70" stroke="#8A6724" stroke-width="2" />
+    <line x1="22" y1="28" x2="22" y2="70" stroke="#8A6724" stroke-width="2" />
+    <line x1="32" y1="28" x2="32" y2="70" stroke="#8A6724" stroke-width="2" />
+    <line x1="42" y1="28" x2="42" y2="70" stroke="#8A6724" stroke-width="2" />
+    <line x1="52" y1="28" x2="52" y2="70" stroke="#8A6724" stroke-width="2" />
+    <line x1="62" y1="28" x2="62" y2="70" stroke="#8A6724" stroke-width="2" />
+    <line x1="72" y1="28" x2="72" y2="70" stroke="#8A6724" stroke-width="2" />
+    <line x1="82" y1="28" x2="82" y2="70" stroke="#8A6724" stroke-width="2" />
+    <line x1="92" y1="28" x2="92" y2="70" stroke="#8A6724" stroke-width="2" />
+    <line x1="102" y1="28" x2="102" y2="70" stroke="#8A6724" stroke-width="2" />
+
+    <!-- Cap Crown / Domed Top -->
+    <path d="M 4 25 C 10 8, 106 8, 112 25 Z" fill="url(#capHighlight)" stroke="#6E4D17" stroke-width="1" />
+    <ellipse cx="58" cy="18" rx="48" ry="6" fill="#FFFFFF" opacity="0.4" />
+    
+    <!-- Golden Seal Ring under Cap -->
+    <rect x="-3" y="71" width="122" height="6" rx="2" fill="url(#bottleGold)" />
+  </g>
+</svg>

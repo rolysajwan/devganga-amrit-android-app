@@ -1,0 +1,6 @@
+{
+  "name": "DevGanga Amrit",
+  "description": "Sacred Ganga Jal from Devprayag Sangam - A premium spiritual heritage application for religious and ritual use.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
